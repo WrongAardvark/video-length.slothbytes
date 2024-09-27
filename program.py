@@ -21,7 +21,7 @@ def get_time():
 
         except IndexError:
             print("Please follow the correct time format (mm:ss): ")
-        except:
+        except ValueError:  # noqa: E722
             print("Something went wrong. Try using the correct format (mm:ss): ")
 
 
